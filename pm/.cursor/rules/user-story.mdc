@@ -1,0 +1,13 @@
+---
+description: User story writing rules
+appliesTo:
+  - docs/specs/**
+  - docs/user-stories/**
+---
+
+- ユーザーストーリーは「As a... I want... So that...」形式で記述する
+- 技術的な実装詳細ではなく、ユーザーの価値に焦点を当てる
+- 1つのストーリーは1つの価値を提供する
+- 受け入れ基準を必ず定義する
+- ストーリーの優先順位を明確にする
+- 依存関係がある場合は明示する

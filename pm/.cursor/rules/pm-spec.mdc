@@ -1,0 +1,11 @@
+---
+description: PM specification management rules
+appliesTo:
+  - docs/specs/**
+  - docs/requirements/**
+---
+
+- 仕様は必ず「目的・前提・スコープ・非スコープ」を含める
+- 決定事項と未決事項を明確に分離する
+- 実装依存の表現と業務要件を混在させない
+- 変更理由（Why）を必ず残す

@@ -1,6 +1,41 @@
-# Cursorをちゃんと使うための知識
+# Cursorテンプレート集
 
-## 公式ドキュメント
+このリポジトリは、Cursorを使い始めるためのテンプレート集です。開発向けとPM向けのテンプレートを分けて提供しています。
+
+## 📁 ディレクトリ構成
+
+```
+cursor-templates/
+├── developer/          # 開発向けテンプレート
+│   ├── AGENTS.md
+│   ├── .cursorignore
+│   └── .cursor/
+│       ├── rules/
+│       ├── commands/
+│       ├── skills/
+│       └── agents/
+├── pm/                 # PM向けテンプレート
+│   ├── README-PM.md
+│   ├── docs/
+│   └── .cursor/
+│       ├── rules/
+│       ├── commands/
+│       ├── skills/
+│       └── agents/
+└── README.md           # このファイル
+```
+
+## 🚀 使い方
+
+1. **開発向けテンプレートを使用する場合**
+   - `developer/` ディレクトリの内容をプロジェクトルートにコピー
+   - 詳細は [developer/README.md](./developer/README.md) を参照
+
+2. **PM向けテンプレートを使用する場合**
+   - `pm/` ディレクトリの内容をプロジェクトルートにコピー
+   - 詳細は [pm/README.md](./pm/README.md) を参照
+
+## 📚 公式ドキュメント
 
 [Cursor ドキュメント](https://cursor.com/ja/docs)
 
@@ -34,6 +69,11 @@
 - .cursor/commands/ 内に .md ファイルとして保存
 - /<command-name> で実行する定型ワークフロー
 - テスト実行、PR 作成、コードレビュー等の作業を shortcut 化できる
+
+使い方の例
+```bash
+/create-commit-message
+```
 
 ### **Agent Skills**
 
