@@ -1,0 +1,9 @@
+---
+description: Frontend rules
+appliesTo:
+  - src/frontend/**
+---
+
+- コンポーネントは責務単位で分割する
+- useEffect に複数責務を入れない
+- UI とデータ取得ロジックを分離する

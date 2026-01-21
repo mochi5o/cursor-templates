@@ -1,0 +1,58 @@
+# Cursor Ignore File
+# このファイルは Cursor エージェントが読み取らないファイル/ディレクトリを指定します
+# セマンティック検索・ルール・インデックス対象から除外されます
+
+# ビルド成果物
+# 生成されたファイルは読み取る必要がないため除外
+dist/
+build/
+out/
+.next/
+.nuxt/
+.output/
+
+# 依存関係
+# node_modules や vendor は通常読み取る必要がない
+node_modules/
+vendor/
+.pnp/
+.pnp.js
+
+# ログファイル
+# ログファイルは通常大きなファイルで、コンテキストを消費するため除外
+storage/logs/
+*.log
+logs/
+*.log.*
+
+# 機密情報
+# 環境変数やシークレットファイルはセキュリティ上除外
+.env
+.env.*
+*.key
+*.pem
+*.p12
+secrets/
+
+# キャッシュ
+# キャッシュファイルは読み取る必要がない
+.cache/
+.parcel-cache/
+.turbo/
+.npm/
+.yarn/
+
+# IDE 設定
+# IDE 固有の設定ファイルは通常不要
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 一時ファイル
+# 一時ファイルや OS 固有のファイル
+.DS_Store
+Thumbs.db
+*.tmp
+*.temp

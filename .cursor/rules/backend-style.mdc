@@ -1,0 +1,14 @@
+---
+description: Backend coding rules
+appliesTo:
+  - src/backend/**
+  - app/**
+  - api/**
+---
+
+- Controller は薄く保ち、ビジネスロジックは Service に委譲する
+- Service は単一責務を守り、ユースケース単位で分割する
+- DTO を使用してリクエスト/レスポンスの型安全性を確保する
+- エラーハンドリングは統一された形式で行う
+- データベースクエリは N+1 問題を避ける
+- トランザクション境界を明確にする
